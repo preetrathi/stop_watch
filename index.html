@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container{
+            width: 250px;
+            margin: 0 auto;
+            box-shadow: 5px 5px 5px rgba(144, 154, 242, 0.5);
+            background-color: black;
+            padding: 30px;
+            border-radius: 30px;
+        }
+        .container h1{
+            color: #f000ff;
+        }
+        .watch {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #7122FA;
+            border-radius: 50%;
+            margin: 0 auto;
+            font-size: 40px;
+            color: #01FFC3;
+
+        }
+
+        .watch h2 {
+            display: inline-block;
+            line-height: 130px;
+            width: 40px;
+            font-size: 40px;
+            color: #01FFC3;
+        }
+        .buttons{
+            margin-top: 30px;
+        }
+        /* .buttons button{
+            border: 1px solid green;
+            outline: green;
+            padding: 10px;
+            color: hotpink;
+            background-color: black;
+            border-radius: 10px;
+            font-size: 20px;
+        } */
+  
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Stop Watch</h1>
+        </div>
+        <div class="watch">
+            <h2 id="min">0</h2>:
+            <h2 id="sec">0</h2>:
+            <h2 id="msec">0</h2>
+        </div>
+        <div class="buttons">
+            <button id="start" onclick="start()">Start</button>
+            <button  id="stop" disabled onclick="stop()">Stop</button>
+            <button id="reset"  onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
